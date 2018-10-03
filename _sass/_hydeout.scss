@@ -1,3 +1,7 @@
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+
 /*
   Most of these imports are derived from https://github.com/poole/poole.
   Designed, built, and released under MIT license by @mdo.
@@ -15,3 +19,7 @@
 @import "hydeout/message";
 @import "hydeout/search";
 @import "hydeout/tags";
+
+
+
+@import "section/sidebar";

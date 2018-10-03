@@ -12,9 +12,31 @@
   </header>
   {% include sidebar-nav-links.html %}
 
-  {% if site.version %}
-    <span class="site-version">Currently v{{ site.version }}</span>
-  {% endif %}
+ 
+
+  <!-- 003333 -->
+
+
+  <!-- <nav class="sidebar-nav">
+    {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.sidebar and node.category == null %}
+          <a class="root-item sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+
+          {% if node.descendants %}
+            {% for subnode in pages_list %}
+              {% if subnode.category == node.id %}
+                <a class="sub-item sidebar-nav-item sidebar-nav-subitem{% if page.url == subnode.url %} active{% endif %}" href="{{ subnode.url }}">{{ subnode.title }}</a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+  </nav> -->
+
+
+
+
 
   {% include sidebar-icon-links.html %}
   {% include copyright.html %}

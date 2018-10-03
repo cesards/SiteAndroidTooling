@@ -1,35 +1,111 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+################################################
+######  SITE GLOBAL CONFIGURATION PARAMS  ######
+################################################
 
-# Setup
-title:            Hydeout
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://fongandrew.github.io
-baseurl:          '/hydeout'
-                  # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
-                  # sidebar_blog_link below.
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed
 
+
+
+################################################
+#####  SITE SPECIFIC CONFIGURATION PARAMS  #####
+################################################
+
+
+
+
+
+sections:
+  - title   : 'AS/IntelliJ Actions'
+    url     : 'sections/android-studio.md'
+  - title   : 'Gradle'
+    url     : 'sections/gradle.md'
+  - title   : 'Git'
+    url     : 'sections/git.md'
+
+sidebar_home_link:  true
+
+markdown:     kramdown
+highlighter:  rouge
+title:        Android Tooling
+tagline:      'A Jekyll theme'
+description:  'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed. Collection of resources created by the community, to master Android Development.'
+url:          https://androidtooling.com
+baseurl:      # '/hydeout'
+              # the optional subpath of your site, e.g. "/blog"
+              # NB: This applies to all pages in your Jekyll site.
+              # If you want to move just the blog index pages but keep
+              # other pages at root, see the paginate_path and
+              # sidebar_blog_link below.
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
-
-paginate:         5
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
+  name: 'Cesar Diez Sanchez'
+  url: https://codeforvictory.com
+paginate: 10
+# paginate_path: '/page:num'
+                 # Or '/blog/page:num' if you want to move your index pages
 
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-
-# Sidebar link settings
 sidebar_home_link:  true
 # sidebar_blog_link:  '/blog'   # By default, your home page is your blog
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# WE NEED TO ADD CORRECT PAGINATION
+# https://github.com/sverrirs/jekyll-paginate-v2
+# https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
+
+
+#############################
+############ OLD ############
+#############################
+
+# Exclude these files from your production _site
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - LICENSE
+#   - README.md
+#   - CNAME
+
+# Use the following plug-ins
+# gems:
+#   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+#   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+
+
+  # Permalinks
+# permalink:        pretty
+#
+# paginate:         5
+
+
+# Jekyll 3 now only supports Kramdown for Markdown
+# kramdown:
+#   # Use GitHub flavored markdown, including triple backtick fenced code blocks
+#   input: GFM
+#   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+#   syntax_highlighter: rouge
+#   syntax_highlighter_opts:
+#     # Use existing pygments syntax highlighting css
+#     css_class: 'highlight'
